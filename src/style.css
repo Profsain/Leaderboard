@@ -36,12 +36,13 @@ body {
 }
 
 .scores {
+  width: 343px;
   border: 2px solid black;
   padding: 0;
   padding: 18px 0;
 }
 
-.scores li {
+.li {
   list-style: none;
   text-align: left;
   padding-top: 16px;
