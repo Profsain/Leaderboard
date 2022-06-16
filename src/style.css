@@ -35,6 +35,12 @@ body {
   height: fit-content;
 }
 
+.btn:hover {
+  cursor: pointer;
+  background-color: darkslategrey;
+  color: #fff;
+}
+
 .scores {
   width: 343px;
   border: 2px solid black;
