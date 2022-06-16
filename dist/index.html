@@ -7,6 +7,34 @@
   <title>Leaderboard</title>
 <script defer src="runtime.js"></script><script defer src="main.js"></script></head>
 <body>
-  <h1>Leader Board</h1>
+  <div class="container">
+    <h1 class="headline">Leader Board</h1>
+    <main class="main">
+      <section class="score-section">
+        <div class="scores-top">
+          <h3 class="section-title">Recent Scores</h3>
+          <button class="refresh-btn">Refresh</button>
+        </div>
+        <ul class="scores">
+          <li>Name: 100</li>
+          <li>Name: 20</li>
+          <li>Name: 50</li>
+          <li>Name: 78</li>
+          <li>Name: 125</li>
+          <li>Name: 88</li>
+          <li>Name: 40</li>
+        </ul>
+      </section>
+      <section class="add-score">
+        <h3 class="section-title">Add Scores</h3>
+        <form action="#" class="form" id="form">
+          <input type="text" name="username" placeholder="Your name">
+          <input type="text" name="userscore" placeholder="Your score">
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+    </main>
+  </div>
 </body>
 </html>
