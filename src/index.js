@@ -1,7 +1,6 @@
 import _ from 'lodash';
 import './style.css';
 import addNewScore from './modules/addscores.js';
-import fetchScoreData from './modules/fetchscoredata.js';
 import renderScores from './modules/renderscores.js';
 
 const form = document.getElementById('form');
@@ -21,10 +20,10 @@ fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games', {
 })
 .then(response => response.json())
 .then(game => {
-  console.log('New Game Created:', game);
+  return game;
 })
 .catch(error => {
-  console.log('Error Message:', error)
+  return error;
 });
 
 // submit new score data to the api
@@ -40,4 +39,6 @@ form.addEventListener('submit', (event) => {
 refreshBtn.addEventListener('click', () => {
   renderScores();
 });
-// render score
+
+// load score on page load
+window.addEventListener('load', renderScores)
